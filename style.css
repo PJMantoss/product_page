@@ -103,7 +103,7 @@ nav li {
     height: 30px;
     text-transform: uppercase;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #submit:hover{
@@ -113,20 +113,63 @@ nav li {
 }
 
 #info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 #features {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .feats {
     display: flex;
+}
+
+#features .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 20vw;
+    color: orange;
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    height: 125px;
+    padding: 5px;
+}
+
+#how-it-works{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+#how-it-works > iframe {
+    width: 560px;
+    max-width: 100%;
+}
+
+#pricing {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 25%;
 }
