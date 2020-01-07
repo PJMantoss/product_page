@@ -168,8 +168,10 @@ nav li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    border: 2px solid black;
-    padding: 10px;
-    width: 25%;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px;
+    width: calc(100% / 3);
 }
