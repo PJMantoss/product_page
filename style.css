@@ -67,13 +67,27 @@ header {
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 0 50px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav > ul > li {
+        padding-bottom: 5px;
+    }
 }
 
 nav > ul {
@@ -81,10 +95,6 @@ nav > ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-nav li {
-    padding-bottom: 5px;
 }
 
 .container{
@@ -147,13 +157,26 @@ nav li {
     color: orange;
 }
 
-#features .desc {
+#features > .desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80vw;
     height: 125px;
     padding: 5px;
+}
+
+@media (max-width: 550px){
+    #features {
+        margin-top: 0;
+    }
+
+    #features > .desc {
+        width: 100%;
+        padding: 0;
+        height: 160px;
+        text-align: center;
+    }
 }
 
 #how-it-works{
@@ -234,6 +257,18 @@ nav li {
     background-color: yellow;
     color: black;
     transform: scale(1.02)
+}
+
+@media (max-width: 850px){
+    #pricing {
+        flex-direction: column;
+    }
+
+    .item {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 footer {
