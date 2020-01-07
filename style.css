@@ -50,6 +50,22 @@ header {
     margin-left: 20px;
 }
 
+@media (max-width: 600px){
+    header {
+        flex-wrap: wrap;
+    }
+
+    .image-div {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .image-div > img {
+        margin: 0 auto;
+    }
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -244,5 +260,4 @@ footer > span {
     color: rgb(47, 47, 48);
 }
 
-@media (){}
 @media (){}
